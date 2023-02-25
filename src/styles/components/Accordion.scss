@@ -1,0 +1,56 @@
+@import '../variables.scss';
+@import '../index.scss';
+
+
+.accordion{
+    &__header{
+        width: 400px;
+        min-width: 250px;
+        background:$white;
+        padding: 16px;
+        cursor: pointer;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        font-family: $golos;
+        border-radius: 2px;
+
+        &__open{
+            background-color:$gray;
+        }
+
+        &:hover{
+            background-color: $boldWhite;
+        }
+    }
+
+    &__content{
+        max-height: 0;
+        overflow: hidden;
+        width: 400px;
+        transition: 0.2s ease-in-out;
+        font-family: $golos;
+        height: 0;
+
+        &__data{
+            padding: 16px;
+            position: relative;
+        }
+
+        &__open{
+            max-height: 300px;
+            height: 300px;
+            overflow: auto;
+            transition: 0.2s ease-in-out;
+        }
+
+
+        img{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: auto;
+        }
+    }
+}

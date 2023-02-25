@@ -1,0 +1,87 @@
+@import '../index.scss';
+@import '../variables.scss';
+
+.avatar{
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    display: inline-block;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+    }
+
+    &__rounded{
+        border-radius: 100px;
+    }
+
+    &__small{
+        width: 16px;
+        height: 16px;
+    }
+
+    &__medium{
+        width: 24px;
+        height: 24px;
+    }   
+
+    &__large{
+        width: 32px;
+        height: 32px;
+    } 
+
+    &__xlarge{
+        width: 48px;
+        height: 48px;
+    }  
+
+
+    &__success{
+        background-color: $success;
+        border: 2px solid $boldSuccess;
+
+    }
+    
+    &__danger{
+        background-color: $danger;
+        border: 2px solid $boldDanger;
+    }
+    &__yellow{
+        background-color: $yellow;
+        border: 2px solid $boldYellow;
+    }
+    &__pink{
+        background-color: $pink;
+        border: 2px solid $boldPink;
+    }
+    &__lilac{
+        background-color: $lilac;
+        border: 2px solid $boldLilac;
+    }
+    &__indigo{
+        background-color: $indigo;
+        border: 2px solid $boldIndigo;
+    }
+    &__turquoise{
+        background-color: $turquoise;
+        border: 2px solid $boldTurquoise;
+    }
+    &__gray{
+        background-color: $gray;
+        border: 2px solid $boldGray;
+    }
+
+    &__white{
+        background-color: $white;
+        border: 2px solid $boldGray
+    }
+
+    &__black{
+        background-color: $black;
+        border: 2px solid $danger
+    }
+}

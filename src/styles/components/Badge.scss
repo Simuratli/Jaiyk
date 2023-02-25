@@ -1,0 +1,63 @@
+@import '../index.scss';
+@import '../variables.scss';
+.badge{
+    display: inline-block;
+    min-width: 10px;
+    min-height: 10px;
+    width: max-content;
+    height: max-content;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    font-family: $golos;
+  
+    &__success{
+        background-color: $success;
+        color: $boldSuccess;
+    }
+
+    &__danger{
+        background-color: $danger;
+        color: $boldDanger;
+    }
+
+    &__yellow{
+        background-color: $yellow;
+        color: $boldYellow;
+    }
+
+    &__pink{
+        background-color: $pink;
+        color: $boldPink;
+    }
+
+    &__lilac{
+        background-color: $lilac;
+        color: $boldLilac;
+    }
+
+    &__indigo{
+        background-color: $indigo;
+        color: $boldIndigo;
+    }
+
+    &__turquoise{
+        background-color: $turquoise;
+        color: $boldTurquoise;
+    }
+
+    &__gray{
+        background-color: $gray;
+        color: $boldGray;
+    }
+
+    &__white{
+        background-color: $white;
+        color: $black;
+    }
+
+    &__black{
+        background-color: $black;
+        color: $white;
+    }
+}
